@@ -4,9 +4,18 @@
     { id: 3, img: 'img/frame3.png', parejaCon: 4 },
     { id: 4, img: 'img/frame4.png', parejaCon: 3 },
     { id: 5, img: 'img/frame5.png', parejaCon: 6 },
-    { id: 6, img: 'img/frame6.png', parejaCon: 5 }
+    { id: 6, img: 'img/frame6.png', parejaCon: 5 },
+    { id: 7, img: 'img/frame5.png', parejaCon: 8 },
+    { id: 8, img: 'img/frame6.png', parejaCon: 7 },
+    { id: 9, img: 'img/frame1.png', parejaCon: 10 },
+    { id: 10, img: 'img/frame2.png', parejaCon: 9 },
+    { id: 11, img: 'img/frame3.png', parejaCon: 12 },
+    { id: 12, img: 'img/frame4.png', parejaCon: 11 },
+    { id: 13, img: 'img/frame5.png', parejaCon: 14 },
+    { id: 14, img: 'img/frame6.png', parejaCon: 13 }
+  
+   
 ];
-
 
 let primera = null;
 let segunda = null;
