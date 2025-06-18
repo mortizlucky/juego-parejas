@@ -67,12 +67,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\frame1.png" />
-    <Content Include="img\frame2.png" />
-    <Content Include="img\frame3.png" />
-    <Content Include="img\frame4.png" />
-    <Content Include="img\frame5.png" />
-    <Content Include="img\frame6.png" />
+    <Content Include="img\1.png" />
+    <Content Include="img\10.png" />
+    <Content Include="img\11.png" />
+    <Content Include="img\12.png" />
+    <Content Include="img\13.png" />
+    <Content Include="img\14.png" />
+    <Content Include="img\15.png" />
+    <Content Include="img\2.png" />
+    <Content Include="img\3.png" />
+    <Content Include="img\4.png" />
+    <Content Include="img\5.png" />
+    <Content Include="img\6.png" />
+    <Content Include="img\7.png" />
+    <Content Include="img\8.png" />
+    <Content Include="img\9.png" />
+    <Content Include="img\FONDO.png" />
+    <Content Include="img\Tapa.png" />
     <Content Include="index.html" />
     <Content Include="script.js" />
     <Content Include="style.css" />
