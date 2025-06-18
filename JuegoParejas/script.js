@@ -1,21 +1,23 @@
 ﻿const pares = [
-    { id: 1, img: 'img/frame1.png', parejaCon: 2 },
-    { id: 2, img: 'img/frame2.png', parejaCon: 1 },
-    { id: 3, img: 'img/frame3.png', parejaCon: 4 },
-    { id: 4, img: 'img/frame4.png', parejaCon: 3 },
-    { id: 5, img: 'img/frame5.png', parejaCon: 6 },
-    { id: 6, img: 'img/frame6.png', parejaCon: 5 },
-    { id: 7, img: 'img/frame5.png', parejaCon: 8 },
-    { id: 8, img: 'img/frame6.png', parejaCon: 7 },
-    { id: 9, img: 'img/frame1.png', parejaCon: 10 },
-    { id: 10, img: 'img/frame2.png', parejaCon: 9 },
-    { id: 11, img: 'img/frame3.png', parejaCon: 12 },
-    { id: 12, img: 'img/frame4.png', parejaCon: 11 },
-    { id: 13, img: 'img/frame5.png', parejaCon: 14 },
-    { id: 14, img: 'img/frame6.png', parejaCon: 13 }
-  
+    { id: 1, img: 'img/1.png', parejaCon: 2 },
+    { id: 2, img: 'img/11.png', parejaCon: 1 },
+    { id: 3, img: 'img/2.png', parejaCon: 4 },
+    { id: 4, img: 'img/12.png', parejaCon: 3 },
+    { id: 5, img: 'img/3.png', parejaCon: 6 },
+    { id: 6, img: 'img/8.png', parejaCon: 5 },
+    { id: 7, img: 'img/4.png', parejaCon: 8 },
+    { id: 8, img: 'img/9.png', parejaCon: 7 },
+    { id: 9, img: 'img/5.png', parejaCon: 10 },
+    { id: 10, img: 'img/10.png', parejaCon: 9 },
+    { id: 11, img: 'img/6.png', parejaCon: 12 },
+    { id: 12, img: 'img/14.png', parejaCon: 11 },
+    { id: 13, img: 'img/7.png', parejaCon: 14 },
+    { id: 14, img: 'img/13.png', parejaCon: 13 },
+    { id: 15, img: 'img/15.png', parejaCon: 16 },
+    { id: 16, img: 'img/15.png', parejaCon: 15 },
    
 ];
+
 
 let primera = null;
 let segunda = null;
