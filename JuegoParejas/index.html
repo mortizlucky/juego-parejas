@@ -2,25 +2,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Juego de Parejas</title>
-   
+    <title>Juego de Parejas Relacionadas</title>
+  
     <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-
 <body>
-    <h1>Juego de Parejas Gráficas</h1>
+
+    <h1>Juego de Parejas</h1>
     <div id="game-board"></div>
 
-    <script src="script.js"></script>
-
+    <!-- Modal de Match -->
     <div id="matchModal" class="modal">
         <div class="modal-content">
-            <p>¡Match!</p>
+            ¡Match!
         </div>
     </div>
 
+    <!-- Modal de Fin del Juego -->
+    <div id="winModal" class="modal">
+        <div class="modal-content">
+            ¡Has completado el juego! 🎉
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -7,17 +7,22 @@
     { id: 6, img: 'img/frame6.png', parejaCon: 5 }
 ];
 
-// Mezclar las cartas
-const cartas = [...pares].sort(() => 0.5 - Math.random());
 
-const gameBoard = document.getElementById('game-board');
 let primera = null;
 let segunda = null;
-let bloqueado = false;
+let bloqueado = true;
+let juegoIniciado = false;
+let matchedPairs = 0;
 
+const gameBoard = document.getElementById('game-board');
+
+// Barajamos las cartas
+const cartas = [...pares].sort(() => 0.5 - Math.random());
+
+// Creamos las cartas
 cartas.forEach(data => {
     const card = document.createElement('div');
-    card.classList.add('card');
+    card.classList.add('card', 'revealed'); // Mostrar todas al inicio
     card.dataset.id = data.id;
     card.dataset.match = data.parejaCon;
 
@@ -26,7 +31,7 @@ cartas.forEach(data => {
     card.appendChild(img);
 
     card.addEventListener('click', () => {
-        if (bloqueado || card.classList.contains('revealed') || card.classList.contains('matched')) return;
+        if (bloqueado || !juegoIniciado || card.classList.contains('revealed') || card.classList.contains('matched')) return;
 
         card.classList.add('revealed');
 
@@ -45,7 +50,17 @@ cartas.forEach(data => {
             ) {
                 primera.classList.add('matched');
                 segunda.classList.add('matched');
-                mostrarModalMatch();
+
+                mostrarModalMatch(); // <<<<< Aquí va el mensaje "¡Match!"
+
+                matchedPairs++;
+
+                if (matchedPairs === pares.length / 2) {
+                    setTimeout(() => {
+                        document.getElementById('winModal').style.display = 'flex';
+                    }, 500);
+                }
+               
                 reset();
             } else {
                 setTimeout(() => {
@@ -60,17 +75,26 @@ cartas.forEach(data => {
     gameBoard.appendChild(card);
 });
 
+// Ocultamos las cartas luego de 5 segundos
+setTimeout(() => {
+    document.querySelectorAll('.card').forEach(card => card.classList.remove('revealed'));
+    bloqueado = false;
+    juegoIniciado = true;
+}, 5000);
+
+// Reset de selección
 function reset() {
     primera = null;
     segunda = null;
     bloqueado = false;
+
+
 }
 
 function mostrarModalMatch() {
     const modal = document.getElementById('matchModal');
     modal.style.display = 'flex';
-
     setTimeout(() => {
         modal.style.display = 'none';
-    }, 3000); // se oculta luego de 1 segundo
+    }, 1000);
 }
