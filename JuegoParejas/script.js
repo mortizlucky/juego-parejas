@@ -71,8 +71,15 @@
                         if (matchedPairs === pares.length / 2) {
                             setTimeout(() => {
                                 winModal.style.display = 'flex';
+
+                                // Ocultar después de 3 segundos
+                                setTimeout(() => {
+                                    winModal.style.display = 'none';
+                                }, 3000);
+
                             }, 500);
                         }
+
 
                         resetSeleccion();
                     } else {
@@ -103,7 +110,7 @@
         crearCartas();
 
         setTimeout(() => {
-            document.querySelectorAll('.card').forEach(c => c.classList.remove('revealed'));
+            document.querySelectorAll('.card').forEach(card => card.classList.remove('revealed'));
             bloqueado = false;
             juegoIniciado = true;
         }, 15000);
