@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-    <h1>Juego de Parejas</h1>
+    <button id="restartBtn">🔄 Reiniciar Juego</button>
+    <!--<h1>Juego de Parejas</h1>-->
     <div id="game-board"></div>
 
     <!-- Modal de Match -->
@@ -27,6 +27,13 @@
     </div>
 
     <script src="script.js"></script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const restartBtn = document.getElementById('restartBtn');
+            restartBtn.addEventListener('click', () => {
+                location.reload(); // 🔄 Esto recarga la página como si presionaras F5
+            });
+        });
+    </script>
 </body>
 </html>
