@@ -106,7 +106,7 @@
             document.querySelectorAll('.card').forEach(c => c.classList.remove('revealed'));
             bloqueado = false;
             juegoIniciado = true;
-        }, 5000);
+        }, 15000);
     }
 
     // Reset de la selección
